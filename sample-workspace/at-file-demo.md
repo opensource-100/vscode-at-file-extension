@@ -3,5 +3,8 @@
 Type `@` below this line to test workspace file completion.
 
 
+@docs/guide.md
 
-@src/components/
+@a.java
+
+@src/components/Button.tsx

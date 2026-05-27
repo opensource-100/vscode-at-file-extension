@@ -7,3 +7,4 @@ test/**
 tsconfig.json
 .gitignore
 .vscode/**
+public-icon.png

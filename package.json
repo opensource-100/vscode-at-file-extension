@@ -2,11 +2,12 @@
   "name": "at-file",
   "displayName": "At File",
   "description": "Complete workspace files and directories after typing @.",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "publisher": "opensource-100",
+  "icon": "public-icon-128.png",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/opensource-100/vscode-at-file-extension.git"
+    "url": "https://github.com/opensource-100/vscode-at-file-extension"
   },
   "engines": {
     "vscode": "^1.90.0"
