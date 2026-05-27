@@ -1,0 +1,78 @@
+{
+  "name": "at_file",
+  "displayName": "At File",
+  "description": "Complete workspace files and directories after typing @.",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*",
+    "onStartupFinished",
+    "onCommand:atFile.refreshIndex"
+  ],
+  "main": "./out/src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "atFile.refreshIndex",
+        "title": "At File: Refresh Index"
+      }
+    ],
+    "configuration": {
+      "title": "At File",
+      "properties": {
+        "atFile.enabledExtensions": {
+          "type": "array",
+          "default": [
+            "md",
+            "txt"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "description": "File extensions where @ file completion is enabled. Do not include dots."
+        },
+        "atFile.exclude": {
+          "type": "array",
+          "default": [
+            "node_modules",
+            "target",
+            ".git",
+            "dist",
+            "build",
+            ".next",
+            ".idea",
+            ".vscode"
+          ],
+          "items": {
+            "type": "string"
+          },
+          "description": "Directory names or glob patterns excluded from file completion."
+        },
+        "atFile.maxResults": {
+          "type": "number",
+          "default": 20,
+          "minimum": 1,
+          "maximum": 5000,
+          "description": "Maximum number of file and directory completion items."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/suite/core.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "@types/vscode": "^1.90.0",
+    "typescript": "^5.4.5"
+  }
+}
