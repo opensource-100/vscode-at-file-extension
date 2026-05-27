@@ -2,7 +2,7 @@
   "name": "at-file",
   "displayName": "At File",
   "description": "Complete workspace files and directories after typing @.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "opensource-100",
   "icon": "public-icon-128.png",
   "repository": {
