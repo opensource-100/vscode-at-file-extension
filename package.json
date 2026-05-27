@@ -70,11 +70,13 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile",
-    "test": "node ./out/test/suite/core.test.js"
+    "test": "node ./out/test/suite/core.test.js",
+    "package": "npm run compile && vsce package"
   },
   "devDependencies": {
     "@types/node": "^20.14.8",
     "@types/vscode": "^1.90.0",
+    "@vscode/vsce": "^3.9.1",
     "typescript": "^5.4.5"
   }
 }

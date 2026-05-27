@@ -1,7 +1,9 @@
-.vscode/**
-test/**
-src/**
+sample-workspace/**
+AGENTS.md
+CLAUDE.md
 docs/**
-node_modules/**
+src/**
+test/**
 tsconfig.json
-*.map
+.gitignore
+.vscode/**
