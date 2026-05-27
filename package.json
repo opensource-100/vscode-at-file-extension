@@ -4,6 +4,10 @@
   "description": "Complete workspace files and directories after typing @.",
   "version": "0.0.1",
   "publisher": "local",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opensource-100/vscode-at-file-extension.git"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },
