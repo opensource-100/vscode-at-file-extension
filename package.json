@@ -3,7 +3,7 @@
   "displayName": "At File",
   "description": "Complete workspace files and directories after typing @.",
   "version": "0.0.1",
-  "publisher": "local",
+  "publisher": "opensource-100",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/opensource-100/vscode-at-file-extension.git"
