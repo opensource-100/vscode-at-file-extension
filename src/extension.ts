@@ -1,15 +1,16 @@
 import * as vscode from 'vscode';
 import { AtFileCompletionProvider } from './completion';
-import { AtFileConfig, defaultConfig, normalizeExtensions, shouldTriggerSuggest } from './config';
+import { AtFileConfig, defaultConfig, normalizeExtensions, parseStringToArray, shouldTriggerSuggest } from './config';
 import { WorkspaceFileIndex } from './fileIndex';
 
 function readConfig(): AtFileConfig {
   const config = vscode.workspace.getConfiguration('atFile');
-  const enabledExtensions = normalizeExtensions(
-    config.get<string[]>('enabledExtensions', defaultConfig.enabledExtensions)
-  );
-  const exclude = config.get<string[]>('exclude', defaultConfig.exclude).filter(Boolean);
+  const enabledExtensionsRaw = config.get<string | string[]>('enabledExtensions', defaultConfig.enabledExtensions);
+  const excludeRaw = config.get<string | string[]>('exclude', defaultConfig.exclude);
   const maxResults = config.get<number>('maxResults', defaultConfig.maxResults);
+
+  const enabledExtensions = normalizeExtensions(parseStringToArray(enabledExtensionsRaw));
+  const exclude = parseStringToArray(excludeRaw);
 
   return {
     enabledExtensions,

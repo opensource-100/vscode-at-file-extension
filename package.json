@@ -30,32 +30,14 @@
       "title": "At File",
       "properties": {
         "atFile.enabledExtensions": {
-          "type": "array",
-          "default": [
-            "md",
-            "txt"
-          ],
-          "items": {
-            "type": "string"
-          },
-          "description": "File extensions where @ file completion is enabled. Do not include dots."
+          "type": "string",
+          "default": "md, txt",
+          "description": "File extensions where @ file completion is enabled, comma-separated. Do not include dots."
         },
         "atFile.exclude": {
-          "type": "array",
-          "default": [
-            "node_modules",
-            "target",
-            ".git",
-            "dist",
-            "build",
-            ".next",
-            ".idea",
-            ".vscode"
-          ],
-          "items": {
-            "type": "string"
-          },
-          "description": "Directory names or glob patterns excluded from file completion."
+          "type": "string",
+          "default": "node_modules, target, .git, dist, build, .next, .idea, .vscode",
+          "description": "Directory names or glob patterns excluded from file completion, comma-separated."
         },
         "atFile.maxResults": {
           "type": "number",

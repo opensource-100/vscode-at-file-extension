@@ -12,6 +12,13 @@ export const defaultConfig: AtFileConfig = {
   maxResults: 20
 };
 
+export function parseStringToArray(value: string | string[]): string[] {
+  if (Array.isArray(value)) {
+    return value;
+  }
+  return value.split(',').map(item => item.trim()).filter(Boolean);
+}
+
 export function normalizeExtensions(extensions: readonly string[]): string[] {
   const seen = new Set<string>();
   const normalized: string[] = [];
