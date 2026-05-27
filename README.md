@@ -6,7 +6,7 @@ At File is a VS Code extension that completes workspace files and directories wh
 
 Open a supported file and type `@`. VS Code will show matching files and directories from the current workspace. Selecting an item inserts a relative path:
 
-![input-demo](input-demo.gif)
+![input-demo](https://raw.githubusercontent.com/opensource-100/vscode-at-file-extension/main/input-demo.gif)
 
 ```text
 @src/components/Button.tsx

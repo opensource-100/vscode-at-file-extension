@@ -8,3 +8,4 @@ tsconfig.json
 .gitignore
 .vscode/**
 public-icon.png
+input-demo.gif
