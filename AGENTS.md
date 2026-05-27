@@ -7,7 +7,7 @@
 ## Project Structure
 
 ```
-at_file/
+at-file/
 ├── src/                    # TypeScript source files
 │   ├── extension.ts        # Extension entry point and activation logic
 │   ├── completion.ts       # CompletionItemProvider implementation

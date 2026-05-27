@@ -1,8 +1,8 @@
-# at_file Design
+# at-file Design
 
 ## Goal
 
-Create a VS Code extension named `at_file` that shows file and directory completion items when a user types `@` in configured file types.
+Create a VS Code extension named `at-file` that shows file and directory completion items when a user types `@` in configured file types.
 
 ## Behavior
 

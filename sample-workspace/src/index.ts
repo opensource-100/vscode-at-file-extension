@@ -1,1 +1,1 @@
-export const demo = 'at_file';
+export const demo = 'at-file';
